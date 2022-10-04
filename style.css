@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     color: white;
 }
-body{
+body {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
 }
-a{
+a {
     text-decoration: none;
 }
 header {
@@ -16,32 +16,54 @@ header {
     display: grid;
     grid-template-columns: 15% 60% 25%;
 }
-.highlight{
+/* li {
+    list-style: none;
+} */
+.highlight {
     background-color: rgb(105, 152, 55);
     border-radius: 10px;
 }
-#nav-title{
+/* input[type=checkbox]{
+    display: none;
+   } 
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   } */
+#nav-title {
     font-size: 2.2vw;
 }
-.navbar, .nav-button{
+.navbar,.nav-button {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
+/* .nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu a {
+    padding: 4%;
+}
+.nav-menu li {
+    font-size: 1vw;
+    padding: 0 2vw;
+} */
 .navbar a{
     font-size: 1vw;
-    padding: 2%; 
+    padding: 2%
 }
-.nav-button a{
+.nav-button a {
     font-size: 1vw;
     padding: 4%; 
 }
-.navbar a:hover{
+.navbar a:hover {
     background-color: rgb(105, 152, 55);
     border-radius: 10px;
 }
-select{
+select {
     color: white;
     outline : none;
     border: none;
@@ -54,14 +76,17 @@ select{
     background-color: rgb(105, 152, 55);
     border-radius: 10px;
 }
-.primary-section{
+.text-capital {
+    text-transform: uppercase;
+}
+.primary-section {
     box-sizing: border-box;
     padding: 2vh 15vw;
     width:100%;
     background-color:#06172e;
     display: flex;
 }
-.secondary-section{
+.secondary-section {
     padding-top: 10vh;
     box-sizing: border-box;
     padding: 2vh 15vw;
@@ -69,27 +94,27 @@ select{
     background: #070620;
     display: flex;
 }
-.primary-content{
+.primary-content {
     margin-top: 5vh;
 }
-.line-1{
+.text-small {
     font-size: 1.2vw;
     font-family: 'Arial Narrow Bold', sans-serif;
     color: green;
 }
-.content-large{
+.text-large {
     margin-top: 2vh;
     font-size: 3.6vw;
     margin-bottom: 2vh;
     font-family: Franklin Gothic Medium;
 }
-.content-medium{
+.text-medium {
     font-size: 1.4vw;
 }
-.button-primary{
+.button-primary {
     margin-top: 5vh;
 }
-.button-primary a{
+.button-primary a {
     padding: 2%;
 }
 #primary-img {
@@ -97,27 +122,25 @@ select{
     margin-left: 5vw;
     margin-top: 2vh;
 }
-#secondary-img{
+#secondary-img {
     margin-top: 3vh;
     width: 29vw;
 }
-.secondary-content{
+.secondary-content {
     margin-left: 3vw;
 }
-.card-outer{
+.ternary-section {
     background-color:#06172e;
     padding: 10vh 15vw;
 }
-.card-head{
+.ternary-header {
     text-align: center;
-    font-size: 3.5vw;
 }
-.card-description{
+.ternary-description {
     margin: 0vh 17vw;
-    font-size: 1.5vw;
     text-align: center;
 }
-.card-container{
+.container {
     margin-top: 5vh;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -129,19 +152,19 @@ select{
     border:1px solid #254334;
     border-radius: 4%;
 }
-.card-container .card:hover {
+.container .card:hover {
     border: 2px solid green;
 }
-.card-main{
+.card-main {
     border: 1px solid #254334;
     border-radius: 4% 4% 0vh 0vh;
     padding: 6vh 2vw 8vh 2vw;
     height: 11vh;
 }
-.card-img{
+.card-img {
     width: 5vw;
 }
-.card-mid{
+.card-mid {
     display: flex;
     background: #06172e;
     margin: 2vh 2vw;
@@ -151,13 +174,15 @@ select{
     border: 1px solid #254334;
     border-radius: 2vw;
 }
-.mid-img{
+.mid-img {
     width: 1.6vw;
+}
+.text-smaller {
+    font-size: 1vw;
 }
 .card-line {
     color: green;
     margin: 2%;
-    font-size: 1vw;
 }
 .card-footer {
     padding: 8vh 1vw 4vh 3vw;
@@ -165,7 +190,6 @@ select{
 .card-date {
     margin-top: 1vh;
     color: greenyellow;
-    font-size: 0.8vw;
 }
 .card-large {
     margin-top: 2vh;
@@ -174,7 +198,6 @@ select{
 .card-end {
     margin-top: 2vh;
     color: green;
-    font-size: 0.8vw;
 }
 #button-secondary {
     text-align: center;
@@ -257,32 +280,24 @@ select{
     margin-top: 0.4vh;
     color: white;
 }
-.footer-end{
+.footer-end {
     padding-top: 10vh;
     display: grid;
     grid-template-columns: 30% 20% 20% 30%;
     grid-gap: 1vw;
 }
-.end-head {
-    font-size: 2vw;
+.footer-header {
     margin-bottom: 5vh;
 }
-.end-content {
-    font-size: 1.2vw;
-}
-.col2-head {
+.sub-header {
     color: greenyellow;
     margin: 2vh 0;
     font-size: 1.3vw;
 }
-.col2-text {
-    font-size: 1.2vw;
-}
-.col3-items p{
+.header-items p {
     margin: 2vh 0;
-    font-size: 1.2vw;
 }
-.end-col {
+.bottom {
     width: 20vw;
 }
 
@@ -290,10 +305,10 @@ select{
     header {
         padding: 2vh 8vw;
     }
-    .highlight{
+    .highlight {
         border-radius: 5px;
     }
-    #nav-title{
+    #nav-title {
         font-size: 3.2vw;
     }
     .navbar {
@@ -302,87 +317,83 @@ select{
         align-items: center;
         justify-content: space-evenly;
     }
-    .navbar a{
+    .navbar a {
         font-size: 1.8vw;
     }
-    .nav-button a{
+    .nav-button a {
         font-size: 1.9vw;
     }
-    .navbar a:hover{
+    .navbar a:hover {
         border-radius: 5px;
     }
-    select{
+    select {
         font-size: 1.8vw;
     }
     .nav-drop:hover {
         border-radius: 5px;
     }
-    .primary-section{
+    .primary-section {
         padding: 2vh 8vw;
         flex-direction: column;
         align-items: center;
     }
-    .secondary-section{
+    .secondary-section {
         padding: 2vh 8vw;
         flex-direction: column;
         align-items: center;
     }
-    .primary-content{
+    .primary-content {
         text-align: center;
     }
-    .line-1{
+    .text-medium {
         font-size: 3.2vw;
     }
-    .content-large{
+    .text-large {
         margin-top: 1vh;
         font-size: 6vw;
     }
-    .content-medium{
-        font-size: 3.2vw;
-    }
-    .button-primary{
+    .button-primary {
         text-align: center;
     }
     #primary-img {
         width: 70vw;
     }
-    #secondary-img{
+    #secondary-img {
         margin: 3vh 0;
         width: 65vw;
     }
-    .secondary-content{
+    .secondary-content {
         text-align: center;
     }
-    .card-outer{
+    .ternary-section {
         padding: 2vh 5vw;
     }
-    .card-head{
-        font-size: 6vw;
+    .ternary-description {
+        margin: 0 13vw;
     }
-    .card-description{
-        margin: 0vh 13vw;
-        font-size: 3vw;
-    }
-    .card-container{
+    .container {
         grid-template-columns: auto;
         grid-gap: 3vh;
     }
-    .card-main{
+    .card-main {
         padding: 2vh 0vw 15vh 10vw;
     }
-    .card-img{
+    .card-img {
         width: 20vw;
     }
-    .card-mid{
-        margin: 4vh 18vw;
+    .card-mid {
+        margin: 4vh 15vw;
         padding: 3vh 6vw;
         width: 20vw;
     }
-    .mid-img{
-        width: 3.2vw;
+    .text-smaller {
+        font-size: 2.5vw;
     }
-    .card-line {
-        font-size: 2.8vw;
+    .text-small {
+        font-size: 2vw;
+    }
+    .mid-img {
+        width: 3.2vw;
     }
     .card-footer {
         padding: 10vh 0 4vh 10vw;
@@ -415,7 +426,7 @@ select{
     .footer-container {
         flex-direction: column;
     }
-    .footer-left{
+    .footer-left {
         width: 100%;
         text-align: center;
     }
@@ -429,27 +440,33 @@ select{
     .footer-right {
         padding: 1%;
         margin: 2vh 10vw;
+        flex-direction: column;
+        align-items: center;
+        background-color: green;
+    }
+    .input {
+        background-color: white;
+        padding: 2%;
     }
     .button-outer {
         border-radius: 0.4vw;
+        margin-top: 1vh;
         width: 25%;
     }
     .right-button {
         font-size: 2.3vw;
     }
-    .end-head {
+    .footer-end {
+        grid-template-columns: auto auto;
+        grid-gap: 6vh;
+    }
+    .footer-header {
         font-size: 3.4vw;
     }
-    .end-content {
+    .header-content {
         font-size: 2.2vw;
     }
-    .col2-head {
+    .sub-header {
         font-size: 2.6vw;
-    }
-    .col2-text {
-        font-size: 2.2vw;
-    }
-    .col3-items p{
-        font-size: 2.4vw;
     }
 } 
